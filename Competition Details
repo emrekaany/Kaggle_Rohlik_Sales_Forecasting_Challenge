@@ -1,0 +1,74 @@
+# Rohlik Sales Forecasting Challenge
+
+## Overview
+The **Rohlik Sales Forecasting Challenge** is a machine learning competition aimed at predicting future sales based on historical data. Organized by **Rohlik Group**, a leading European e-grocery innovator, the challenge focuses on leveraging historical sales data to enhance supply chain processes, delivery logistics, and inventory management. Accurate forecasts contribute to reducing waste and ensuring efficient operations.
+
+## Challenge Scope
+Participants are tasked with forecasting **sales volume** for selected inventory items over the next **14 days** using historical sales data. The dataset contains sales records from Rohlik’s **11 warehouses** operating in **Czech Republic, Germany, Austria, Hungary, and Romania**.
+
+## Competition Timeline
+- **Start Date:** 3 months ago
+- **Close Date:** 14 hours ago (Late Submission Accepted)
+
+## Dataset Description
+The dataset consists of multiple files that provide detailed information about sales, inventory, calendar events, and warehouse operations. Some columns have been altered to maintain confidentiality.
+
+### 📂 Files in the Dataset
+- `sales_train.csv` – Historical sales data for training.
+- `sales_test.csv` – Testing dataset for making predictions.
+- `inventory.csv` – Metadata about inventory, including product categories.
+- `calendar.csv` – Calendar events such as public holidays and warehouse-specific closures.
+- `solution.csv` – Sample submission file format.
+- `test_weights.csv` – Weights used in the evaluation metric.
+
+### 📝 Key Columns in `sales_train.csv` & `sales_test.csv`
+- **unique_id** – Unique inventory ID.
+- **date** – Date of the record.
+- **warehouse** – Warehouse name.
+- **total_orders** – Historical order count (available for test set too).
+- **sales** – Target variable (missing in test set).
+- **sell_price_main** – Selling price of the item.
+- **availability** – Proportion of the day when inventory was available.
+- **type_0_discount, type_1_discount, …** – Various promotional discount rates applied.
+
+### 🏷️ Key Columns in `inventory.csv`
+- **unique_id** – Inventory ID.
+- **product_unique_id** – Product ID across warehouses.
+- **name** – Product name.
+- **L1_category_name, L2_category_name, …** – Hierarchical product categorization.
+- **warehouse** – Warehouse location.
+
+### 📅 Key Columns in `calendar.csv`
+- **warehouse** – Warehouse location.
+- **date** – Date of the record.
+- **holiday_name** – Public holiday name (if applicable).
+- **holiday** – Binary flag for holidays (0/1).
+- **shops_closed** – Indicator for whether shops were closed.
+- **winter_school_holidays** – Binary flag for winter school holidays.
+- **school_holidays** – Binary flag for school holidays.
+
+### ⚖️ Key Columns in `test_weights.csv`
+- **unique_id** – Inventory ID.
+- **weight** – Weight used for computing the final evaluation metric.
+
+## 📊 Evaluation Metric
+Submissions are evaluated using the **Weighted Mean Absolute Error (WMAE)** between the predicted and actual sales values. Weights for test evaluation are provided in the `test_weights.csv` file.
+
+## 📌 Submission Format
+Each submission file must contain **predicted sales values** for each `id` in the test set. The format should be as follows:
+
+```csv
+id,sales_hat
+840_2024-06-10,12.01
+2317_2024-06-15,13.32
+738_2024-06-10,14.12
+3894_2024-06-11,3.03
+3393_2024-06-08,53.03
+```
+
+## 🚀 Why This Challenge Matters?
+Accurate sales forecasting is crucial for optimizing **planning, logistics, and inventory management** in the e-grocery industry. This competition provides an opportunity to apply machine learning techniques to real-world problems, contributing to more sustainable and efficient supply chain operations.
+
+## 🌍 Your Impact
+By participating in this challenge, you directly support **Rohlik Group’s mission** to enhance customer service, improve sustainability, and optimize e-grocery operations.
+
