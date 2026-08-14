@@ -1,14 +1,12 @@
 # Rohlik Sales Forecasting Challenge
 
+> Portfolio context only. The live [Kaggle competition page](https://www.kaggle.com/competitions/rohlik-sales-forecasting-challenge-v2/overview) is the canonical source for current rules, files, dates, and licensing.
+
 ## Overview
 The **Rohlik Sales Forecasting Challenge** is a machine learning competition aimed at predicting future sales based on historical data. Organized by **Rohlik Group**, a leading European e-grocery innovator, the challenge focuses on leveraging historical sales data to enhance supply chain processes, delivery logistics, and inventory management. Accurate forecasts contribute to reducing waste and ensuring efficient operations.
 
 ## Challenge Scope
 Participants are tasked with forecasting **sales volume** for selected inventory items over the next **14 days** using historical sales data. The dataset contains sales records from Rohlik’s **11 warehouses** operating in **Czech Republic, Germany, Austria, Hungary, and Romania**.
-
-## Competition Timeline
-- **Start Date:** 3 months ago
-- **Close Date:** 14 hours ago (Late Submission Accepted)
 
 ## Dataset Description
 The dataset consists of multiple files that provide detailed information about sales, inventory, calendar events, and warehouse operations. Some columns have been altered to maintain confidentiality.
@@ -69,6 +67,6 @@ id,sales_hat
 ## 🚀 Why This Challenge Matters?
 Accurate sales forecasting is crucial for optimizing **planning, logistics, and inventory management** in the e-grocery industry. This competition provides an opportunity to apply machine learning techniques to real-world problems, contributing to more sustainable and efficient supply chain operations.
 
-## 🌍 Your Impact
-By participating in this challenge, you directly support **Rohlik Group’s mission** to enhance customer service, improve sustainability, and optimize e-grocery operations.
+## Portfolio learning objective
 
+The case study is used to demonstrate time-aware feature engineering, chronological validation, and reproducible forecasting boundaries. It does not claim deployment within Rohlik Group or verified business impact.

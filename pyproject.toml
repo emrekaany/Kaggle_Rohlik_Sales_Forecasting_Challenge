@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rohlik-forecasting-safety-layer"
+version = "0.1.0"
+description = "Leakage-safe feature and time-split contracts for a Rohlik forecasting case study"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "Emre Kaan Yılmaz"}]
+dependencies = ["pandas>=2.0,<3"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
